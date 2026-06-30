@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Order Confirmed - Beauty Shop</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/css/style.css">
+<script defer src="assets/js/static-store.js"></script>
+<script defer src="assets/js/static-pages.js"></script>
+
+</head>
+<body>
+
+<header class="site-header">
+    <div class="nav-wrap">
+        <a class="logo" href="index.html">Beauty<span>Shop</span></a>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <nav class="nav-menu" id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart <span class="badge" id="cartCount">0</span></a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="admin-demo.html">Admin Demo</a>
+        </nav>
+    </div>
+</header>
+
+<main class="main-container">
+    <div class="success-page">
+        <div class="success-icon">✓</div>
+        <h1>Order Confirmed</h1>
+        <p>Your demo order has been saved in this browser. In the full PHP version, this order is saved inside the MySQL database.</p>
+        <p><strong id="orderCode"></strong></p>
+        <div class="hero-actions center">
+            <a class="btn" href="products.html">Continue Shopping</a>
+            <a class="btn btn-outline" href="admin-demo.html">View Admin Demo</a>
+        </div>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <strong>Beauty Shop</strong>
+    <p>Static GitHub Pages demo version. Full PHP + MySQL version is included in the project files.</p>
+</footer>
+
+</body>
+</html>

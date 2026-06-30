@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Beauty Shop - Cosmetics and Personal Care</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/css/style.css">
+<script defer src="assets/js/static-store.js"></script>
+<script defer src="assets/js/static-pages.js"></script>
+
+</head>
+<body>
+
+<header class="site-header">
+    <div class="nav-wrap">
+        <a class="logo" href="index.html">Beauty<span>Shop</span></a>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <nav class="nav-menu" id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart <span class="badge" id="cartCount">0</span></a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="admin-demo.html">Admin Demo</a>
+        </nav>
+    </div>
+</header>
+
+<main class="main-container">
+    <section class="hero">
+        <div>
+            <span class="eyebrow">Cosmetics & Personal Care</span>
+            <h1>Shop beauty products in one organized place.</h1>
+            <p>Beauty Shop is a simple e-commerce demo for skincare, makeup, haircare, perfume, and personal-care products. Customers can browse products, add items to a cart, and place a demo order.</p>
+            <div class="hero-actions">
+                <a class="btn" href="products.html">Browse Products</a>
+                <a class="btn btn-outline" href="cart.html">View Cart</a>
+            </div>
+        </div>
+        <div class="hero-card">
+            <img src="assets/images/hero.svg" alt="Beauty products illustration">
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-heading row-between">
+            <div>
+                <h2>Shop by Category</h2>
+                <p>Clean categories for a small cosmetics business.</p>
+            </div>
+            <a class="link" href="products.html">See all products</a>
+        </div>
+        <div class="category-grid">
+            <a class="category-card" href="products.html?category=Skincare"><span>Skincare</span><small>Cleanser, toner, sunscreen</small></a>
+            <a class="category-card" href="products.html?category=Makeup"><span>Makeup</span><small>Lipstick, foundation</small></a>
+            <a class="category-card" href="products.html?category=Haircare"><span>Haircare</span><small>Shampoo and care</small></a>
+            <a class="category-card" href="products.html?category=Perfume"><span>Perfume</span><small>Fresh fragrance</small></a>
+            <a class="category-card" href="products.html?category=Personal Care"><span>Personal Care</span><small>Lotion and daily care</small></a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-heading row-between">
+            <div>
+                <h2>Featured Products</h2>
+                <p>Sample products loaded with JavaScript for the live demo.</p>
+            </div>
+        </div>
+        <div class="product-grid" id="featuredProducts"></div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <strong>Beauty Shop</strong>
+    <p>Static GitHub Pages demo version. Full PHP + MySQL version is included in the project files.</p>
+</footer>
+
+</body>
+</html>

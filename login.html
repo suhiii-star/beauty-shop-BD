@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login - Beauty Shop</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/css/style.css">
+<script defer src="assets/js/static-store.js"></script>
+<script defer src="assets/js/static-pages.js"></script>
+
+</head>
+<body>
+
+<header class="site-header">
+    <div class="nav-wrap">
+        <a class="logo" href="index.html">Beauty<span>Shop</span></a>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <nav class="nav-menu" id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart <span class="badge" id="cartCount">0</span></a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="admin-demo.html">Admin Demo</a>
+        </nav>
+    </div>
+</header>
+
+<main class="main-container">
+    <div class="auth-wrap">
+        <form class="auth-card" id="loginForm">
+            <h1>Customer Login</h1>
+            <p class="muted">Static demo login. Full authentication is available in the PHP version.</p>
+            <label>Email</label>
+            <input type="email" id="loginEmail" required placeholder="customer@email.com">
+            <label>Password</label>
+            <input type="password" id="loginPassword" required placeholder="Enter password">
+            <button class="btn btn-full" type="submit">Login Demo</button>
+            <div class="demo-box">Demo: any email and password will work here.</div>
+        </form>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <strong>Beauty Shop</strong>
+    <p>Static GitHub Pages demo version. Full PHP + MySQL version is included in the project files.</p>
+</footer>
+
+</body>
+</html>

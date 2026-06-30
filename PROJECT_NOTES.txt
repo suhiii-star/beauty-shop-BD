@@ -1,0 +1,26 @@
+Beauty Shop Project Notes
+
+Project Type: E-Commerce website for cosmetics and personal-care products.
+
+Main problem solved:
+Small sellers often manage orders through Facebook posts/messages. Beauty Shop keeps products, cart, customer data, and orders in one organized website.
+
+Database tables:
+1. users - stores customers and admin accounts.
+2. products - stores product catalogue, category, price, stock, image, description, and suitability notes.
+3. orders - stores main order record, customer, total, delivery details, status.
+4. order_details - stores each product inside an order with quantity and unit price.
+
+Security practices used:
+- password_hash() for storing passwords
+- password_verify() during login
+- prepared SQL statements for user input
+- sessions for login protection
+- admin role checking
+- CSRF token for important POST forms
+
+Limitations:
+- Runs on local XAMPP server
+- No online payment
+- No real delivery tracking
+- No advanced reviews/recommendation system

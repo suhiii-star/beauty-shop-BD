@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Demo - Beauty Shop</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/css/style.css">
+<script defer src="assets/js/static-store.js"></script>
+<script defer src="assets/js/static-pages.js"></script>
+
+</head>
+<body>
+
+<header class="site-header">
+    <div class="nav-wrap">
+        <a class="logo" href="index.html">Beauty<span>Shop</span></a>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <nav class="nav-menu" id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart <span class="badge" id="cartCount">0</span></a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="admin-demo.html">Admin Demo</a>
+        </nav>
+    </div>
+</header>
+
+<main class="main-container">
+    <div class="page-header">
+        <h1>Admin Demo Panel</h1>
+        <p>This static panel shows product and order management for GitHub Pages. The full admin panel is in the PHP version.</p>
+    </div>
+    <section class="section" style="margin-top:0;">
+        <div class="stat-grid">
+            <div class="stat-card"><span>Total Products</span><strong id="adminProductCount">0</strong></div>
+            <div class="stat-card"><span>Demo Orders</span><strong id="adminOrderCount">0</strong></div>
+            <div class="stat-card"><span>Cart Items</span><strong id="adminCartCount">0</strong></div>
+            <div class="stat-card"><span>Status</span><strong>Demo</strong></div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="row-between section-heading">
+            <div><h2>Orders</h2><p>Orders created from checkout are saved in browser storage.</p></div>
+            <button class="btn btn-outline" id="clearOrdersBtn">Clear Demo Orders</button>
+        </div>
+        <div class="table-card" id="adminOrders"></div>
+    </section>
+    <section class="section">
+        <div class="row-between section-heading">
+            <div><h2>Products</h2><p>Sample catalogue used by the static live website.</p></div>
+        </div>
+        <div class="table-card" id="adminProducts"></div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <strong>Beauty Shop</strong>
+    <p>Static GitHub Pages demo version. Full PHP + MySQL version is included in the project files.</p>
+</footer>
+
+</body>
+</html>

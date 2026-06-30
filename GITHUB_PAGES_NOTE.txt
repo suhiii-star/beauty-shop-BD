@@ -1,0 +1,19 @@
+GitHub Pages Live Version
+=========================
+
+This project contains two versions:
+
+1. Full project: PHP + MySQL version
+   - Run with XAMPP.
+   - Import database/beauty_shop.sql.
+   - Uses index.php, products.php, cart.php, checkout.php, admin/*.php, etc.
+
+2. Live demo project: Static HTML + CSS + JavaScript version
+   - Run on GitHub Pages.
+   - Uses index.html, products.html, product.html, cart.html, checkout.html, login.html, register.html, admin-demo.html.
+   - Does not need PHP or MySQL.
+   - Cart and demo orders are stored in browser localStorage.
+
+For your form:
+GitHub Repository Link = your repository link
+Live Website URL = https://your-username.github.io/your-repository-name/
